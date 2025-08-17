@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fútbol Web</title>
+<style>
+    /* Colores y tipografía */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        background-color: #2E8B57; /* verde césped */
+        color: #fff;
+    }
+    header {
+        background-color: #000;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2em;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #1C5D3C;
+        padding: 10px;
+    }
+    nav a {
+        color: #FFD700;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    nav a:hover {
+        color: #FF4500;
+    }
+    section {
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+    }
+    table, th, td {
+        border: 2px solid #FFD700;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+    tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .card {
+        background-color: rgba(0,0,0,0.5);
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    footer {
+        background-color: #000;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body>
+
+<header>⚽ Mi Web de Fútbol ⚽</header>
+
+<nav>
+    <a href="#horarios">Horarios</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#noticias">Noticias</a>
+</nav>
+
+<section id="horarios">
+    <h2>Próximos Partidos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Equipo Local</th>
+                <th>Equipo Visitante</th>
+                <th>Estadio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20/08/2025</td>
+                <td>18:00</td>
+                <td>Real Madrid</td>
+                <td>Barcelona</td>
+                <td>Santiago Bernabéu</td>
+            </tr>
+            <tr>
+                <td>21/08/2025</td>
+                <td>20:00</td>
+                <td>Atlético</td>
+                <td>Sevilla</td>
+                <td>Wanda Metropolitano</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="resultados">
+    <h2>Últimos Resultados</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Local</th>
+                <th>Visitante</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>15/08/2025</td>
+                <td>Real Madrid</td>
+                <td>Valencia</td>
+                <td>3 - 1</td>
+            </tr>
+            <tr>
+                <td>16/08/2025</td>
+                <td>Sevilla</td>
+                <td>Atlético</td>
+                <td>2 - 2</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="noticias">
+    <h2>Noticias y Actualizaciones</h2>
+    <div class="card">
+        <h3>Messi marca un hat-trick</h3>
+        <p>En el partido contra Real Sociedad, Messi brilló con tres goles y lideró la victoria de su equipo.</p>
+    </div>
+    <div class="card">
+        <h3>Champions: Sorteo de grupos</h3>
+        <p>Se realizó el sorteo de la Champions League, y los equipos favoritos ya conocen sus rivales.</p>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Mi Web de Fútbol
+</footer>
+
+</body>
+</html>
